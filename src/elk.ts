@@ -195,7 +195,7 @@ export function trapAliases() {
 	};
 
 	return Object.entries(trap_aliases)
-		.map(([alias, vect]) => `${alias}=0x${vect.toString(16)}`)
+		.map(([alias, vect]) => `${alias}=x${vect.toString(16)}`)
 		.join(',');
 }
 
